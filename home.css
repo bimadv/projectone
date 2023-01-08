@@ -1,0 +1,199 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap');
+
+
+
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif Display', serif;
+}
+
+
+
+
+/*-----header------*/
+
+
+
+/* Navbar */
+nav#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 99;
+}
+nav#navbar .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+nav#navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  width: 10vw;
+  height: 6vh;
+  
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    border: solid #7a651a 2px;
+    border-radius: 50px;
+}
+
+nav#navbar .nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 4vw;
+  padding: 0;
+}
+
+.nav-menu li a:hover{
+    background-color: #7a651a;
+    padding: 2vw;
+    border-radius: 4px;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.nav-menu .active{
+    background-color: #7a651a;
+    padding: 2vw;
+    border-radius: 4px;
+    transition: .6s;
+}
+
+
+
+nav#navbar .nav-menu li {
+  margin: 0 10px;
+}
+nav#navbar .nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+    transition: .6s;
+    cursor: pointer;
+}
+nav #navbar .nav-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Sidebar */
+
+#sidebar {
+  position: fixed;
+  top: 60px;
+  left: -220px;
+  bottom: 0;
+  width: 200px;
+  background-color: #797979;
+  padding: 20px;
+  transition: left 0.3s ease-out;
+}
+
+#sidebar h3{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    border: solid #000 4px;
+    border-radius: 6px;
+}
+
+
+#sidebar.open {
+  left: 0;
+}
+
+#sidebar ul{
+    padding-top: 4vh;
+}
+
+#sidebar ul li{
+    list-style: none;
+    padding: 2vh;
+} 
+
+#sidebar ul li a{
+    padding-left: 2vh;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+#sidebar li{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu{
+    border-radius: 6px;
+    background-color: #7a651a;
+    margin: 2vh 0vh;
+}
+
+/*---- button night mode -------*/
+
+
+#night-mode-button {
+  display: flex;
+  background-color: transparent;
+  color: #000;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+
+.night-mode {
+  transition: 1s;
+  background-color: #000;
+  color: #fff;
+}
+
+
+/*---- button night mode end -------*/
+
+
+.settings-button{    
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-toggle{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+/* Page Content */
+#page-content{
+    
+}
+
+
